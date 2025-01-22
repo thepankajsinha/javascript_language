@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each</title>
+</head>
+
+<body>
+    <script>
+        const maang = ["Meta", "Amazon", "Apple", "Netflix", "Google"];
+
+        // Create a <ul> element
+        const ul = document.createElement('ul');
+
+        // Append the <ul> to the body
+        const bodyy = document.querySelector('body');
+        bodyy.appendChild(ul);
+
+        maang.forEach(ele => {
+            const li = document.createElement('li'); // Create a new <li> element
+            li.innerText = ele;
+            ul.appendChild(li);
+        });
+
+    </script>
+</body>
+
+</html>
